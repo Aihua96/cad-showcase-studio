@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 生成物（技能仓库只收源文件）
+*.step
+*.STEP
+*.glb
+*.stl
+*.3mf
+
+# 编辑器
+.vscode/
+.idea/
