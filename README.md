@@ -65,6 +65,10 @@ git clone https://github.com/Aihua96/cad-showcase-studio.git \
 克隆后**重开会话**，技能才会出现在可用列表里。其他客户端放到各自的 `skills/` 目录即可，
 `SKILL.md` 的 `name` 字段需与目录名一致。
 
+> 若目标目录已存在且非空，`clone` 会失败。先备份原目录，或在原目录里
+> `git init && git remote add origin <url> && git fetch --all && git reset --hard origin/main`，
+> 之后就能用 `git pull` 跟进更新。
+
 **只想看方法论、不装技能**：直接读 [`SKILL.md`](SKILL.md) 和 `references/` 下的五个文档，
 它们是独立的操作规程，不依赖任何代码。
 
